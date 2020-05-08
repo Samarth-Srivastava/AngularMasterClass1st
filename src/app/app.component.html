@@ -1,0 +1,30 @@
+<div class="border border-primary">
+  <div class="row">
+    <input type="number" [(ngModel)]="value1"/>
+    <label>{{signT}} </label>
+    <input type="number" [(ngModel)]="value2"/>
+    <label>{{equalTo}} </label>
+    <label>{{result}} </label>
+  </div>
+  <div class="row">
+<div class="col-2">
+  <button type="button" (click)="add()">+</button>
+</div>
+<div class="col-2">
+  <button type="button" (click)="diff()">-</button>
+</div>
+<div class="col-2">
+  <button type="button" (click)="product()">x</button>
+</div>
+<div class="col-2">
+  <button type="button" (click)="Divide()">
+    <i class="fas fa-divide"></i>
+  </button>
+  {{errMsg}}
+</div>
+<div class="col-2">
+  <button type="button" (click)="clear()">Reset</button>
+</div>
+<div class="col-2"></div>
+  </div>
+</div>
