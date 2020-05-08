@@ -10,8 +10,8 @@ export class AppComponent  {
   signT: string;
   equalTo: string;
   result: number;
-  value1: number = 0;
-  value2: number =0;
+  value1: number = null;
+  value2: number =null;
   errMsg: string;
 
   add(){
@@ -40,7 +40,7 @@ export class AppComponent  {
     }
 
     this.signT = "/";
-    this.result = this.value1 + this.value2;
+    this.result = this.value1 / this.value2;
     this.equalTo ="=";
   }
 
@@ -48,8 +48,8 @@ export class AppComponent  {
     this.signT = "";
     this.result = null;
     this.equalTo = "";
-    this.value1 = 0;
-    this.value2= 0;
+    this.value1 = null;
+    this.value2= null;
     this.errMsg = "";
   }
 

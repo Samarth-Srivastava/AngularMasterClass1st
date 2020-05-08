@@ -1,40 +1,41 @@
-<div class="border border-primary">
+<div class="border border-dark">
   <div class="form-row">
     <div class="col-2">
-    <input type="number" [(ngModel)]="value1"/>
+      <input type="number" [(ngModel)]="value1"/>
     </div>
     <div class="col-2">
-    <label>{{signT}} </label>
-</div>
+      <label>{{signT}} </label>
+    </div>
     <div class="col-2">
-    <input type="number" [(ngModel)]="value2"/>
-</div>
+      <input type="number" [(ngModel)]="value2"/>
+    </div>
     <div class="col-2">
-    <label>{{equalTo}} </label>
-</div>
+      <label>{{equalTo}} </label>
+    </div>
     <div class="col-2">
-    <label>{{result}} </label>
+      <label>{{result}} </label>
+    </div>
   </div>
   <div class="form-row"></div>
   <div class="form-row">
-<div class="col-2">
-  <button type="button" (click)="add()"><b>+</b></button>
-</div>
-<div class="col-2">
-  <button type="button" (click)="diff()"><b>-</b></button>
-</div>
-<div class="col-2">
-  <button type="button" (click)="product()"><b>x</b></button>
-</div>
-<div class="col-2">
-  <button type="button" (click)="Divide()">
-    <i class="fas fa-divide"></i>
-  </button>
-  {{errMsg}}
-</div>
-<div class="col-2">
-  <button type="button" (click)="clear()">Reset</button>
-</div>
-<div class="col-2"></div>
+    <div class="col-2">
+      <button type="button" (click)="add()"><b>+</b></button>
+    </div>
+    <div class="col-2">
+      <button type="button" (click)="diff()"><b>-</b></button>
+    </div>
+    <div class="col-2">
+      <button type="button" (click)="product()"><b>x</b></button>
+    </div>
+    <div class="col-2">
+      <button type="button" (click)="Divide()">
+        <i class="fas fa-divide"></i>
+      </button>
+      {{errMsg}}
+    </div>
+    <div class="col-2">
+      <button type="button" (click)="clear()">Reset</button>
+    </div>
+    <div class="col-2"></div>
   </div>
 </div>
