@@ -1,13 +1,14 @@
-<div class="border border-dark m-5">
-  <div class="form-row">
+<div class="border border-dark m-5 w-50">
+  <div class="form-row m-2">
     <div class="col-2">
-      <input type="number" [(ngModel)]="value1"/>
+      <input  type="number" [(ngModel)]="value1" class="w-50"/>
     </div>
     <div class="col-2">
       <label>{{signT}} </label>
     </div>
     <div class="col-2">
-      <input type="number" [(ngModel)]="value2"/>
+      <input type="number" [(ngModel)]="value2" class="w-50"/>
+      {{errMsg}}
     </div>
     <div class="col-2">
       <label>{{equalTo}} </label>
@@ -16,8 +17,8 @@
       <label>{{result}} </label>
     </div>
   </div>
-  <div class="form-row"></div>
-  <div class="form-row">
+  <div class="form-row m-2"></div>
+  <div class="form-row m-2">
     <div class="col-2">
       <button type="button" (click)="add()"><b>+</b></button>
     </div>
@@ -31,7 +32,7 @@
       <button type="button" (click)="Divide()">
         <i class="fas fa-divide"></i>
       </button>
-      {{errMsg}}
+
     </div>
     <div class="col-2">
       <button type="button" (click)="clear()">Reset</button>

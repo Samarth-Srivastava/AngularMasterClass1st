@@ -15,33 +15,35 @@ export class AppComponent  {
   errMsg: string;
 
   add(){
+        this.errMsg = "";
     this.signT = "+";
     this.result = this.value1 + this.value2;
     this.equalTo ="=";
   }
 
   product(){
+        this.errMsg = "";
     this.signT = "x";
     this.result = this.value1 * this.value2;
     this.equalTo ="=";
   }
 
   diff(){
+        this.errMsg = "";
     this.signT = "-";
     this.result = this.value1 - this.value2;
     this.equalTo ="=";
   }
 
   Divide(){
+     this.signT = "/";
+     this.equalTo ="=";
     if(this.value2 == 0){
       this.errMsg = "Denominator cannot be 0";
-      
+      this.result = null;
       return;
     }
-
-    this.signT = "/";
     this.result = this.value1 / this.value2;
-    this.equalTo ="=";
   }
 
   clear(){
